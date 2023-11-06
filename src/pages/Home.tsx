@@ -1,5 +1,11 @@
+import Info from "../components/Info/Info";
+
 function Home() {
-  return <div>home</div>;
+  return (
+    <div>
+      <Info />
+    </div>
+  );
 }
 
 export default Home;
