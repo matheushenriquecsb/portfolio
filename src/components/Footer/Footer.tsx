@@ -1,17 +1,26 @@
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import GithubIcon from "@mui/icons-material/GitHub";
 import "./footer.css";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="socialMedia">
-        <TwitterIcon />
-        <FacebookIcon />
-        <LinkedInIcon />
+        <a
+          href="https://linkedin.com/in/matheus-henrique-batista-120821"
+          target="_blank"
+        >
+          <LinkedInIcon />
+        </a>
+        <a href="mailto:matheus.mhg2@gmail.com" target="_blank">
+          <EmailIcon />
+        </a>
+        <a href="https://github.com/matheushenriquecsb" target="_blank">
+          <GithubIcon />
+        </a>
       </div>
-      <p> &copy; 2022 pedrotech.com</p>
+      <p className="copyright">Copyright &#169; 2023. All Rights Reserved</p>
     </div>
   );
 }
