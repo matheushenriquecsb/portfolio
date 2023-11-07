@@ -9,36 +9,78 @@ function Backend() {
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>Javascript</h3>
+            <p>Moderado</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>Typescript</h3>
+            <p>Moderado</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>NestJs</h3>
+            <p>Avançado</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>NodeJs</h3>
+            <p>Avançado</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>Laravel</h3>
+            <p>Básico</p>
+          </div>
+        </article>
+        <article>
+          <CheckBoxOutlined />
+          <div>
+            <h3>Docker</h3>
+            <p>Moderado</p>
+          </div>
+        </article>
+        <article>
+          <CheckBoxOutlined />
+          <div>
+            <h3>PostgreSQL</h3>
+            <p>Moderado</p>
+          </div>
+        </article>
+        <article>
+          <CheckBoxOutlined />
+          <div>
+            <h3>SQLServer</h3>
+            <p>Moderado</p>
+          </div>
+        </article>
+        <article>
+          <CheckBoxOutlined />
+          <div>
+            <h3>MongoDB</h3>
+            <p>Moderado</p>
+          </div>
+        </article>
+        <article>
+          <CheckBoxOutlined />
+          <div>
+            <h3>Redis</h3>
+            <p>Básico</p>
+          </div>
+        </article>
+        <article>
+          <CheckBoxOutlined />
+          <div>
+            <h3>Amazon AWS</h3>
+            <p>Básico</p>
           </div>
         </article>
       </div>

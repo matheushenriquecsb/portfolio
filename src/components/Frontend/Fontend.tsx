@@ -9,35 +9,35 @@ function Frontend() {
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>React</h3>
+            <p>Moderado</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>CSS</h3>
+            <p>Moderado</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>Tailwind</h3>
+            <p>Básico</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
-            <p>Experienced</p>
+            <h3>Bootstrap</h3>
+            <p>Básico</p>
           </div>
         </article>
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Rract</h3>
+            <h3>HTML</h3>
             <p>Experienced</p>
           </div>
         </article>

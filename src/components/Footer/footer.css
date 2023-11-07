@@ -21,8 +21,14 @@
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  .footer svg {
-    font-size: 50px;
-  }
+.socialMedia svg:hover {
+  color: #e9d35b;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.copyright {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }

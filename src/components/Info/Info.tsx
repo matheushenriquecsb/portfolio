@@ -27,7 +27,7 @@ function Info() {
           </a>
         </div>
       </div>
-      <section>
+      <section id="experience">
         <p className="section-title">Explore My</p>
         <h1 className="title">Tech Skills</h1>
         <div className="experience-details-container">
