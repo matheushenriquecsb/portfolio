@@ -37,13 +37,6 @@ function Backend() {
         <article>
           <CheckBoxOutlined />
           <div>
-            <h3>Laravel</h3>
-            <p>Básico</p>
-          </div>
-        </article>
-        <article>
-          <CheckBoxOutlined />
-          <div>
             <h3>Docker</h3>
             <p>Moderado</p>
           </div>
@@ -73,7 +66,7 @@ function Backend() {
           <CheckBoxOutlined />
           <div>
             <h3>Redis</h3>
-            <p>Básico</p>
+            <p>Moderado</p>
           </div>
         </article>
         <article>

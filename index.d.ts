@@ -1,2 +1,2 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-declare module "*.jpg";
+declare module "*.png";
