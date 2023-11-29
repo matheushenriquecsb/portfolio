@@ -14,7 +14,7 @@ function Project() {
       <h1> {project.name}</h1>
       <img src={project.image} />
       <div className="social_links">
-        <a href={project.link} target="_blank">
+        <a href={project.github} target="_blank">
           <GitHubIcon />
         </a>
         <a href={project.link} target="_blank">
@@ -22,7 +22,7 @@ function Project() {
         </a>
       </div>
       <p>
-        <b>Skills:</b> {project.skills}
+        <b>Tech Stacks:</b> {project.skills}
       </p>
     </div>
   );

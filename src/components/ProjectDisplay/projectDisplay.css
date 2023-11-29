@@ -8,6 +8,7 @@
 }
 
 .project h1 {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 40px;
   color: #3e497a;
   font-size: 35px;
@@ -21,8 +22,13 @@
 }
 
 .project p {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
   color: #3e497a;
+}
+
+.project p b {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .project svg {
