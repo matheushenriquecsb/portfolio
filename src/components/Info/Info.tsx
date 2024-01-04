@@ -3,8 +3,13 @@ import "./info.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GithubIcon from "@mui/icons-material/GitHub";
+
+import Button from "@mui/material/Button";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+
 import Frontend from "../Frontend/Fontend";
 import Backend from "../Backend/Backend";
+import { Link } from "react-router-dom";
 
 function Info() {
   return (
@@ -25,6 +30,17 @@ function Info() {
           <a href="https://github.com/matheushenriquecsb" target="_blank">
             <GithubIcon />
           </a>
+        </div>
+        <div className="button-curriculo">
+          <Link to={"src/assets/Curriculo.pdf"} target="_blank" download>
+            <Button
+              component="label"
+              variant="contained"
+              startIcon={<CloudUploadIcon />}
+            >
+              Upload Curriculo
+            </Button>
+          </Link>
         </div>
       </div>
       <section id="experience">
