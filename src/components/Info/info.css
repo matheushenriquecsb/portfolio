@@ -76,6 +76,11 @@ section {
   margin-top: 2rem;
 }
 
+.button-curriculo {
+  margin-top: 42px;
+  size: 50px;
+}
+
 #experience {
   position: relative;
 }
