@@ -1,13 +1,3 @@
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
 .skills-container {
   padding: 1.5rem;
   flex: 1;
@@ -16,11 +6,13 @@
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  margin-top: 15px;
 }
 
 .tech-subtitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(85, 85, 85);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
@@ -41,6 +33,6 @@ article {
   gap: 0.5rem;
 }
 
-article .icon {
-  cursor: default;
+article h3 {
+  font-size: 1.5rem;
 }

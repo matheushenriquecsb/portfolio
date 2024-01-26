@@ -1,15 +1,15 @@
 import "./info.css";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GithubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import Button from "@mui/material/Button";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import Button from "@mui/material/Button";
 
-import Frontend from "../Frontend/Fontend";
-import Backend from "../Backend/Backend";
 import { Link } from "react-router-dom";
+import Backend from "../Backend/Backend";
+import Frontend from "../Frontend/Fontend";
 
 function Info() {
   return (
@@ -17,7 +17,10 @@ function Info() {
       <div className="about">
         <h2>Hi, I'm Matheus Henrique</h2>
         <div className="describe">
-          <p>A software developer with passion for learning and developing</p>
+          <p>
+            Desenvolvedor FullStack, graduado em Análise e Desenvolvimento de
+            Sistemas
+          </p>
           <a
             href="https://linkedin.com/in/matheus-henrique-batista-120821"
             target="_blank"
@@ -44,7 +47,6 @@ function Info() {
         </div>
       </div>
       <section id="experience">
-        <p className="section-title">Explore My</p>
         <h1 className="title">Tech Skills</h1>
         <div className="experience-details-container">
           <div className="about-containers">

@@ -1,5 +1,4 @@
 import "./frontend.css";
-import CheckBoxOutlined from "@mui/icons-material/CheckBoxOutlined";
 
 function Frontend() {
   return (
@@ -7,38 +6,39 @@ function Frontend() {
       <h2 className="tech-subtitle">Frontend</h2>
       <div className="article-container">
         <article>
-          <CheckBoxOutlined />
           <div>
-            <h3>React</h3>
+            <h3>HTML5</h3>
             <p>Moderado</p>
           </div>
         </article>
         <article>
-          <CheckBoxOutlined />
           <div>
-            <h3>CSS</h3>
+            <h3>CSS3</h3>
             <p>Moderado</p>
           </div>
         </article>
         <article>
-          <CheckBoxOutlined />
+          <div>
+            <h3>ReactJS</h3>
+            <p>Moderado</p>
+          </div>
+        </article>
+        <article>
           <div>
             <h3>Tailwind</h3>
             <p>Básico</p>
           </div>
         </article>
         <article>
-          <CheckBoxOutlined />
           <div>
-            <h3>Bootstrap</h3>
-            <p>Básico</p>
+            <h3>AntD</h3>
+            <p>Moderado</p>
           </div>
         </article>
         <article>
-          <CheckBoxOutlined />
           <div>
-            <h3>HTML</h3>
-            <p>Experienced</p>
+            <h3>Auth0</h3>
+            <p>Moderado</p>
           </div>
         </article>
       </div>

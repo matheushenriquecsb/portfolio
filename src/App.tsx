@@ -3,10 +3,10 @@ import "./App.css";
 
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import Project from "./components/ProjectDisplay/ProjectDisplay";
 import Experiences from "./pages/Experience";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Project from "./components/ProjectDisplay/ProjectDisplay";
 
 function App() {
   return (
