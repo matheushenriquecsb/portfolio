@@ -5,6 +5,7 @@ import GithubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import PhoneIcon from "@mui/icons-material/WhatsApp";
 import Button from "@mui/material/Button";
 
 import { Link } from "react-router-dom";
@@ -34,14 +35,28 @@ function Info() {
             <GithubIcon />
           </a>
         </div>
-        <div className="button-curriculo">
+        <div>
           <Link to={"src/assets/Curriculo.pdf"} target="_blank" download>
             <Button
+              className="link-curriculo "
               component="label"
               variant="contained"
               startIcon={<CloudUploadIcon />}
             >
               Upload Curriculo
+            </Button>
+          </Link>
+          <Link
+            to={"https://api.whatsapp.com/send?phone=5571991910098"}
+            target="_blank"
+            className="link-whatsapp"
+          >
+            <Button
+              component="label"
+              variant="contained"
+              startIcon={<PhoneIcon />}
+            >
+              Entre em contato comigo
             </Button>
           </Link>
         </div>
