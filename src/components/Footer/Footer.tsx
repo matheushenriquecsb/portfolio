@@ -20,7 +20,7 @@ function Footer() {
           <GithubIcon />
         </a>
       </div>
-      <p className="copyright">Copyright &#169; 2023. All Rights Reserved</p>
+      <p className="copyright">Copyright &#169; 2024. All Rights Reserved</p>
     </div>
   );
 }
