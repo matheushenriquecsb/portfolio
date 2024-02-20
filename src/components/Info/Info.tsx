@@ -38,7 +38,8 @@ function Info() {
         <div>
           <Link to={"src/assets/Curriculo.pdf"} target="_blank" download>
             <Button
-              className="link-curriculo "
+              className="link-curriculo"
+              size="large"
               component="label"
               variant="contained"
               startIcon={<CloudUploadIcon />}
@@ -53,6 +54,7 @@ function Info() {
           >
             <Button
               component="label"
+              size="large"
               variant="contained"
               startIcon={<PhoneIcon />}
             >

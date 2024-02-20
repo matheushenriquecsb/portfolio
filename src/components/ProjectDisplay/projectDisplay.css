@@ -5,10 +5,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 1px solid #fcba03;
 }
 
 .project h1 {
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 30px;
   color: #3e497a;
   font-size: 35px;
@@ -22,18 +22,13 @@
 }
 
 .project p {
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
-  color: #3e497a;
-}
-
-.project p b {
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0a0a0a;
 }
 
 .project svg {
   font-size: 60px;
-  color: #3e497a;
+  color: #0a0a0a;
 }
 
 .project svg:hover {
@@ -47,6 +42,7 @@
   align-items: center;
   text-align: center;
   margin: 5px;
+  margin-bottom: 1px solid #fcba03;
 }
 
 .social_links a {

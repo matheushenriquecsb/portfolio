@@ -10,11 +10,14 @@
 }
 
 .tech-subtitle {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(85, 85, 85);
   font-weight: 800;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+}
+
+.tech-icons {
+  font-size: 4.5em !important;
 }
 
 .article-container {
@@ -33,6 +36,7 @@ article {
   gap: 0.5rem;
 }
 
-article h3 {
-  font-size: 1.5rem;
+article p {
+  font-size: 15px;
+  margin-left: 15px;
 }
