@@ -1,4 +1,10 @@
 import "./backend.css";
+import { RiJavascriptLine } from "react-icons/ri";
+import { BiLogoNodejs } from "react-icons/bi";
+import { SiNestjs, SiPostgresql, SiPrisma } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { DiMongodb, DiRedis } from "react-icons/di";
+import { FaAws, FaDocker, FaPhp, FaLaravel } from "react-icons/fa";
 
 function Backend() {
   return (
@@ -6,77 +12,78 @@ function Backend() {
       <h2 className="tech-subtitle">Backend</h2>
       <div className="article-container">
         <article>
-          <div>
-            <h3>Javascript</h3>
-            <p>Avançado</p>
-          </div>
+          <i className="tech-icons">
+            <RiJavascriptLine />
+            <p>Javascript</p>
+          </i>
         </article>
         <article>
-          <div>
-            <h3>Typescript</h3>
-            <p>Avançado</p>
-          </div>
+          <i className="tech-icons">
+            <BiLogoTypescript />
+            <p>Typescript</p>
+          </i>
         </article>
         <article>
-          <div>
-            <h3>NestJs</h3>
-            <p>Avançado</p>
-          </div>
+          <i className="tech-icons">
+            <SiNestjs />
+            <p>NestJS</p>
+          </i>
         </article>
         <article>
-          <div>
-            <h3>NodeJs</h3>
-            <p>Avançado</p>
-          </div>
+          <i className="tech-icons">
+            <BiLogoNodejs />
+            <p>NodeJS</p>
+          </i>
+        </article>
+        <article>
+          <i className="tech-icons">
+            <FaPhp />
+            <p>PHP</p>
+          </i>
+        </article>
+        <article>
+          <i className="tech-icons">
+            <FaLaravel />
+            <p>Laravel</p>
+          </i>
         </article>
 
         <article>
-          <div>
-            <h3>PostgreSQL</h3>
-            <p>Moderado</p>
-          </div>
+          <i className="tech-icons">
+            <SiPostgresql />
+            <p>PostgreSQL</p>
+          </i>
+        </article>
+
+        <article>
+          <i className="tech-icons">
+            <DiMongodb />
+            <p>MongoDB</p>
+          </i>
         </article>
         <article>
-          <div>
-            <h3>SQLServer</h3>
-            <p>Moderado</p>
-          </div>
+          <i className="tech-icons">
+            <DiRedis />
+            <p>Redis</p>
+          </i>
         </article>
         <article>
-          <div>
-            <h3>MongoDB</h3>
-            <p>Moderado</p>
-          </div>
+          <i className="tech-icons">
+            <FaAws />
+            <p>AWS</p>
+          </i>
         </article>
         <article>
-          <div>
-            <h3>Redis</h3>
-            <p>Moderado</p>
-          </div>
+          <i className="tech-icons">
+            <FaDocker />
+            <p>Docker</p>
+          </i>
         </article>
         <article>
-          <div>
-            <h3>AWS</h3>
-            <p>Básico</p>
-          </div>
-        </article>
-        <article>
-          <div>
-            <h3>Docker</h3>
-            <p>Moderado</p>
-          </div>
-        </article>
-        <article>
-          <div>
-            <h3>TypeORM</h3>
-            <p>Moderado</p>
-          </div>
-        </article>
-        <article>
-          <div>
-            <h3>Prisma</h3>
-            <p>Básico</p>
-          </div>
+          <i className="tech-icons">
+            <SiPrisma />
+            <p>Prisma</p>
+          </i>
         </article>
       </div>
     </div>
