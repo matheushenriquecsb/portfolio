@@ -33,10 +33,10 @@ article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
-  gap: 0.5rem;
+  gap: 5rem;
 }
 
 article p {
   font-size: 15px;
-  margin-left: 15px;
+  margin-left: 50px;
 }
