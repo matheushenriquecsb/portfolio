@@ -9,21 +9,23 @@
 }
 
 .project h1 {
-  margin-top: 30px;
+  margin-top: 120px;
   color: #3e497a;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .project img {
-  margin: 40px;
+  margin: 35px;
   width: 700px;
   height: 400px;
   border-radius: 10px;
 }
 
 .project p {
-  font-size: 40px;
-  color: #0a0a0a;
+  font-size: 30px;
+  margin-top: 10px;
+  margin: auto;
+  color: #090808;
 }
 
 .project svg {
@@ -42,7 +44,7 @@
   align-items: center;
   text-align: center;
   margin: 5px;
-  margin-bottom: 1px solid #fcba03;
+  margin-right: 20px;
 }
 
 .social_links a {

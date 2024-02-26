@@ -22,7 +22,7 @@ function Project() {
         </a>
       </div>
       <p>
-        <b>Tech Stacks:</b> {project.skills}
+        <b>Stacks:</b> {project.skills}
       </p>
     </div>
   );
