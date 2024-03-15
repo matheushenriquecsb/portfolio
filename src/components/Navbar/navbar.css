@@ -1,93 +1,48 @@
 .navbar {
-  width: 100%;
-  height: 100px;
-  background: #6c6e72;
-}
-
-.links {
-  width: 100%;
-  height: 100%;
+  background: rgb(30, 30, 30);
+  height: 80px;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 16px 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin: 20px;
-  font-size: 25px;
-  font-weight: 600;
+.navbarTitle {
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.navbar a:hover {
-  color: #020202;
-}
-
-.toggleButton {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.toggleButton svg {
-  font-size: 50px;
-}
-.toggleButton button {
-  margin-right: 20px;
-  background-color: transparent;
-  border: none;
-  color: white;
+.navbarMenuItem {
+  margin: 16px;
   cursor: pointer;
 }
 
-#open {
-  height: 100vh;
+.navbarMenuItem:hover {
+  color: yellow;
+  padding-bottom: 6px;
+  border-bottom: 3px solid yellow;
 }
 
-#open .links {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 100px;
+.navbarMenuButton {
+  background-color: white;
+  font-weight: 300;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 0 20px;
 }
 
-#open a {
-  width: 100%;
-  text-align: center;
-}
-
-@media only screen and (max-width: 900px) {
-  .navbar a {
-    width: 70px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .toggleButton {
-    display: flex;
-  }
-  #close a {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .toggleButton {
-    display: none;
-  }
-
-  .hiddenLinks {
-    display: none;
-  }
-
-  #open {
-    height: 100px;
-  }
-
-  #open .links {
-    flex-direction: row;
-  }
+.navbarContactImg {
+  object-fit: cover;
+  height: 25px;
+  margin: 10px;
 }

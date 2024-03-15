@@ -1,4 +1,4 @@
-import Info from "../components/Info/Info";
+import Info from "../components/Intro/Intro";
 
 function Home() {
   return (
