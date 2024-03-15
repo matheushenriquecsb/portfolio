@@ -1,35 +1,33 @@
-import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
-import ReorderIcon from "@mui/icons-material/Reorder";
-import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
+import chat from "../../assets/icons/chat-icon.svg";
 
-function Navbar() {
-  const [expandNavbar, setExpandNavbar] = useState(false);
-
-  const location = useLocation();
-
-  useEffect(() => {
-    setExpandNavbar(false);
-  }, [location]);
-
+const Navbar = () => {
   return (
-    <div className="navbar" id={expandNavbar ? "open" : "close"}>
-      <div className="toggleButton">
-        <button
-          onClick={() => {
-            setExpandNavbar((prev) => !prev);
-          }}
-        >
-          <ReorderIcon />
+    <div>
+      <nav className="navbar">
+        <span className="navbarTitle">Portfolio</span>
+        <div className="navbarMenu">
+          <Link to="" className="navbarMenuItem">
+            Home
+          </Link>
+          <Link to="" className="navbarMenuItem">
+            Tech Skills
+          </Link>
+          <Link to="" className="navbarMenuItem">
+            Projetos
+          </Link>
+          <Link to="" className="navbarMenuItem">
+            Contato
+          </Link>
+        </div>
+        <button className="navbarMenuButton">
+          <img src={chat} className="navbarContactImg" />
+          Entre em contato
         </button>
-      </div>
-      <div className="links">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/projects"}>Projects</Link>
-        <Link to={"/experiences"}>Experiences</Link>
-      </div>
+      </nav>
     </div>
   );
-}
+};
 
 export default Navbar;
