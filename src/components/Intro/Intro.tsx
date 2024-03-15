@@ -1,7 +1,6 @@
 import "./intro.css";
-import { Link } from "react-scroll";
 import profile from "../../assets/images/profile.png";
-import download from "../../assets/icons/download-icon.svg";
+import pdf from "../../assets/resume.pdf";
 
 const Intro = () => {
   return (
@@ -10,7 +9,7 @@ const Intro = () => {
         <div className="introContent">
           <span className="helloText">Olá,</span>
           <span className="introText">
-            Sou <span className="introName">Matheus Henrique,</span> <br />
+            Sou <span className="introName">Matheus Henrique</span> <br />
             Desenvolvedor Fullstack,
             <p className="introDescription">
               Sou um desenvolvedor fullstack com foco para backend, formado como
@@ -19,12 +18,11 @@ const Intro = () => {
               de sistemas, <br /> atualmente graduado em Análise e
               Desenvolvimento de Sistemas
             </p>
-            <Link to="">
-              <button className="introButton">
-                Curriculo
-                <img src={download} className="downloadIcon" />
+            <a href={pdf} target="_blank">
+              <button className="introButton" style={{ maxWidth: "250px" }}>
+                Download Curriculo
               </button>
-            </Link>
+            </a>
           </span>
         </div>
         <img src={profile} alt="profile" className="profilePicture" />
