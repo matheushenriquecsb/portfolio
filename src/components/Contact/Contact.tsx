@@ -12,14 +12,29 @@ import "./contact.css";
 const Contact = () => {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
-  const formRef = useRef<HTMLFormElement | string>("");
+  const formRef = useRef<HTMLFormElement>(null);
+
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
+
+    const messageTextarea = formRef.current?.querySelector(
+      'textarea[name="message"]'
+    ) as HTMLTextAreaElement;
+    const message = messageTextarea.value.trim();
+
+    if (!message) {
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 3000);
+      return;
+    }
+
     try {
       await emailjs.sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        formRef.current,
+        formRef.current!,
         {
           publicKey: import.meta.env.VITE_PUBLIC_KEY,
         }
