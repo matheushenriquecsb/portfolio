@@ -1,3 +1,3 @@
 ### Personal Portfolio
 
-https://portfolio-matheushenriquecsb.netlify.app/
+https://portfolio-matheushenrique.netlify.app/
