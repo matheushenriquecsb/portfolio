@@ -3,10 +3,7 @@ import { FormEvent, useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
 import Stack from "@mui/material/Stack";
-import github from "../../assets/icons/github.svg";
-import instagram from "../../assets/icons/instagram.svg";
-import linkedin from "../../assets/icons/linkedin.svg";
-import whatsapp from "../../assets/icons/whatsapp.svg";
+import SocialMedia from "../SocialMedia/SocialMedia";
 import "./contact.css";
 
 const Contact = () => {
@@ -95,40 +92,7 @@ const Contact = () => {
           <button type="submit" value="send" className="submitBtn">
             Envie
           </button>
-          <div className="links">
-            <a
-              href="https://linkedin.com/in/matheus-henrique-batista-120821/"
-              target="_blank"
-              className="link-container"
-            >
-              <img src={linkedin} className="link" alt="linkedin" />
-              <span className="hover-text">LinkedIn</span>
-            </a>
-            <a
-              href="https://instagram.com/matheus.henriquebc/"
-              target="_blank"
-              className="link-container"
-            >
-              <img src={instagram} className="link" alt="instagram" />
-              <span className="hover-text">Instagram</span>
-            </a>
-            <a
-              href="https://github.com/matheushenriquecsb"
-              target="_blank"
-              className="link-container"
-            >
-              <img src={github} className="link" alt="github" />
-              <span className="hover-text">GitHub</span>
-            </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=5571991910098"
-              target="_blank"
-              className="link-container"
-            >
-              <img src={whatsapp} className="link" alt="whatsapp" />
-              <span className="hover-text">WhatsApp</span>
-            </a>
-          </div>
+          <SocialMedia />
         </form>
       </section>
     </div>
