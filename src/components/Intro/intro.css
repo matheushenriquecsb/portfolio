@@ -19,11 +19,12 @@
 
 .profilePicture {
   position: absolute;
+  margin-top: 45px;
   top: 50px;
   right: 0;
   z-index: 0;
   object-fit: cover;
-  height: 60vh;
+  height: 45vh;
 }
 
 .helloText {
