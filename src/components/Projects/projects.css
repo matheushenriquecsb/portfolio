@@ -32,6 +32,10 @@
   max-width: 65rem;
 }
 
+.projectImgs h4 {
+  color: white;
+}
+
 .projectImg {
   object-fit: cover;
   height: 10rem;

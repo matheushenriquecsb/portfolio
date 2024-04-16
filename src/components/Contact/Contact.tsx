@@ -52,45 +52,45 @@ const Contact = () => {
   return (
     <div>
       <section id="contact">
-        <h1 className="contactTitle">Entre em Contato</h1>
-        <span className="contactDesc">Por favor preencha os campos abaixo</span>
+        <h1 className="contactTitle">Contact me</h1>
+        <span className="contactDesc">Please fill in the fields below</span>
         <form className="contactForm" ref={formRef} onSubmit={sendEmail}>
           <input
             type="text"
             className="name"
-            placeholder="Seu Nome"
+            placeholder="Your Name"
             name="your_name"
           />
           <input
             type="email"
             className="email"
-            placeholder="Seu Email"
+            placeholder="Your Email"
             name="your_email"
           />
           <textarea
             name="message"
             rows={5}
             className="msg"
-            placeholder="Digite uma mensagem"
+            placeholder="Send a message"
           />
           <span className="messageStatus">
             {error && (
               <Stack sx={{ width: "100%" }} spacing={2}>
                 <Alert variant="filled" severity="error">
-                  Ocorreu algum erro, tente novamente!
+                  An error occurred, please try again!
                 </Alert>
               </Stack>
             )}
             {success && (
               <Stack sx={{ width: "100%" }} spacing={2}>
                 <Alert variant="filled" severity="success">
-                  Enviado com Sucesso
+                  Sent with success
                 </Alert>
               </Stack>
             )}
           </span>
           <button type="submit" value="send" className="submitBtn">
-            Envie
+            Send
           </button>
           <SocialMedia />
         </form>

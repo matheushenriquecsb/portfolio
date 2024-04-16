@@ -14,7 +14,7 @@ const Skills = () => {
             <img src={frontend} alt="" className="skillBarImg" />
             <div className="skillBarText">
               <h2>Frontend</h2>
-              <p>HTML5 | CSS3 | ReactJS | VueJS | TalwindCSS</p>
+              <p>HTML5 | CSS3 | ReactJS | Auth0 | VueJS | TalwindCSS</p>
             </div>
           </div>
           <div className="skillBar">
@@ -23,7 +23,7 @@ const Skills = () => {
               <h2>Backend</h2>
               <p>
                 Javascript | Typescript | NestJS | NodeJS | ExpressJS | Docker |
-                AWS | Jest
+                Jest | AWS S3 | Firebase | Git | Github
               </p>
             </div>
           </div>
