@@ -43,7 +43,7 @@ const Navbar = () => {
             duration={500}
             className="navbarMenuItem"
           >
-            Projetos
+            Projects
           </Link>
           <Link
             activeClass="active"
@@ -54,7 +54,7 @@ const Navbar = () => {
             duration={500}
             className="navbarMenuItem"
           >
-            Contato
+            Contact
           </Link>
         </div>
         <button
@@ -66,7 +66,7 @@ const Navbar = () => {
           }}
         >
           <img src={chat} className="navbarContactImg" />
-          Entre em contato
+          Contact Me
         </button>
         <img
           src={menu}

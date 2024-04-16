@@ -8,20 +8,19 @@ const Intro = () => {
     <div>
       <section id="intro">
         <div className="introContent">
-          <span className="helloText">Olá,</span>
+          <span className="helloText">Hello,</span>
           <span className="introText">
-            Sou <span className="introName">Matheus Henrique</span> <br />
-            Desenvolvedor Fullstack,
+            I'm <span className="introName">Matheus Henrique</span> <br />
+            Fullstack Developer,
             <p className="introDescription">
-              Como desenvolvedor possuo experiência no desenvolvimento e
-              implementação
+              As a developer, I have experience in developing and maintenance
               <br />
-              de aplicações que abrangem tanto o frontend como o backend, <br />
-              atualmente graduado em Análise e Desenvolvimento de Sistemas
+              of applications that cover both the frontend and the backend,
+              <br />
             </p>
             <a href={pdf} target="_blank">
               <button className="introButton" style={{ maxWidth: "250px" }}>
-                Download Curriculo
+                See my resume
               </button>
             </a>
             <SocialMedia />
