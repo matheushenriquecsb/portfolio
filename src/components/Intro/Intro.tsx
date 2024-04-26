@@ -15,7 +15,7 @@ const Intro = () => {
             <p className="introDescription">
               As a developer, I have experience in developing and maintenance
               <br />
-              of applications that cover both the frontend and the backend,
+              of applications that cover both the frontend and the backend
               <br />
             </p>
             <a href={pdf} target="_blank">
