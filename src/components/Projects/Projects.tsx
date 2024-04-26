@@ -13,30 +13,32 @@ const Projects = () => {
           seeking to improve my knowledge in technology.
         </span>
         <div className="projectImgs">
-          <a href="https://burguer-order-menu.netlify.app" target="_blank">
-            <img
-              src={burguerOrder}
-              alt="burguer-order"
-              className="projectImg"
-            />
-            <h4>Vue.js | Laravel</h4>
-          </a>
-
           <a href="https://booking-rent.netlify.app" target="_blank">
+            <h3>Booking Clone Fullstack</h3>
+            <h4>ReactJS | NodeJS</h4>
             <img
               src={bookingWebsite}
               alt="booking-project"
               className="projectImg"
             />
-            <h4>ReactJS | NestJS</h4>
+          </a>
+          <a href="https://burguer-order-menu.netlify.app" target="_blank">
+            <h3>Burguer Order Fullstack</h3>
+            <h4>Vue.js | NodeJS</h4>
+            <img
+              src={burguerOrder}
+              alt="burguer-order"
+              className="projectImg"
+            />
           </a>
           <a href="https://githubfinder-api.netlify.app" target="_blank">
+            <h3>Github Finder</h3>
+            <h4>ReactJS</h4>
             <img
               src={githubProject}
               alt="github-finder"
               className="projectImg"
             />
-            <h4>ReactJS | Axios</h4>
           </a>
         </div>
         <a href="https://github.com/matheushenriquecsb" target="_blank">
