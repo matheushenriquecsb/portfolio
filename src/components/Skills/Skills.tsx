@@ -23,7 +23,7 @@ const Skills = () => {
               <h2>Backend</h2>
               <p>
                 Javascript | Typescript | NestJS | NodeJS | ExpressJS | Docker |
-                Jest | AWS S3 | Firebase | Git | Github
+                Jest | AWS S3 | Firebase | Stripe | Git | Github 
               </p>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Skills = () => {
             <img src={database} alt="" className="skillBarImg" />
             <div className="skillBarText">
               <h2>Database</h2>
-              <p>SQL | SQLServer | PostgreSQL | Redis | MongoDB | Prisma</p>
+              <p>SQL | SQLServer | PostgreSQL | Redis | MongoDB | TypeOrm | Prisma</p>
             </div>
           </div>
         </div>
