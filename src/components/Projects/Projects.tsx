@@ -16,7 +16,7 @@ const Projects = () => {
         <div className="projectImgs">
           <a href="https://booking-rent.netlify.app" target="_blank">
             <h3>Booking Clone Fullstack</h3>
-            <h4>ReactJS | NodeJS | MongoDB</h4>
+            <h4>ReactJS | StyledComponents | NodeJS | MongoDB</h4>
             <img
               src={bookingWebsite}
               alt="booking-project"
@@ -25,7 +25,7 @@ const Projects = () => {
           </a>
           <a href="https://delivery-food-order.netlify.app" target="_blank">
             <h3>Food Order Delivery FullStack</h3>
-            <h4>ReactJS | NodeJS | PostgreSQL </h4>
+            <h4>ReactJS | CSS3 | NodeJS | PostgreSQL </h4>
             <img
               src={foodOrderProject}
               alt="food-project"
@@ -34,7 +34,7 @@ const Projects = () => {
           </a>
           <a href="https://burguer-order-menu.netlify.app" target="_blank">
             <h3>Burguer Order Fullstack</h3>
-            <h4>Vue.js | NodeJS</h4>
+            <h4>Vue.js | CSS | NodeJS</h4>
             <img
               src={burguerOrder}
               alt="burguer-order"
@@ -43,7 +43,7 @@ const Projects = () => {
           </a>
           <a href="https://githubfinder-api.netlify.app" target="_blank">
             <h3>Github Finder</h3>
-            <h4>ReactJS</h4>
+            <h4>ReactJS | CSS | Axios</h4>
             <img
               src={githubProject}
               alt="github-finder"

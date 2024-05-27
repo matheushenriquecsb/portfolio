@@ -14,7 +14,10 @@ const Skills = () => {
             <img src={frontend} alt="" className="skillBarImg" />
             <div className="skillBarText">
               <h2>Frontend</h2>
-              <p>HTML5 | CSS3 | ReactJS | Auth0 | VueJS | TalwindCSS</p>
+              <p>
+                HTML5 | CSS3 | Styled Components | ReactJS | VueJS | TalwindCSS | Bootstrap
+                | Auth0
+              </p>
             </div>
           </div>
           <div className="skillBar">
@@ -23,7 +26,7 @@ const Skills = () => {
               <h2>Backend</h2>
               <p>
                 Javascript | Typescript | NestJS | NodeJS | ExpressJS | Docker |
-                Jest | AWS S3 | Firebase | Stripe | Git | Github 
+                Jest | AWS S3 | Firebase | Stripe | Git | Github
               </p>
             </div>
           </div>
@@ -31,7 +34,10 @@ const Skills = () => {
             <img src={database} alt="" className="skillBarImg" />
             <div className="skillBarText">
               <h2>Database</h2>
-              <p>SQL | SQLServer | PostgreSQL | Redis | MongoDB | TypeOrm | Prisma</p>
+              <p>
+                SQL | SQLServer | PostgreSQL | Redis | MongoDB | TypeOrm |
+                Prisma
+              </p>
             </div>
           </div>
         </div>
