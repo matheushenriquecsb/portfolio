@@ -4,7 +4,16 @@ import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Stack from "@mui/material/Stack";
 import SocialMedia from "../SocialMedia/SocialMedia";
-import "./contact.css";
+import {
+  ButtonSend,
+  ContactTitle,
+  Container,
+  Form,
+  Input,
+  MessageStatus,
+  Subtitle,
+  Text,
+} from "./styles";
 
 const Contact = () => {
   const [error, setError] = useState(false);
@@ -51,50 +60,39 @@ const Contact = () => {
 
   return (
     <div>
-      <section id="contact">
-        <h1 className="contactTitle">Contact me</h1>
-        <span className="contactDesc">Please fill in the fields below</span>
-        <form className="contactForm" ref={formRef} onSubmit={sendEmail}>
-          <input
-            type="text"
-            className="name"
-            placeholder="Your Name"
-            name="your_name"
-          />
-          <input
+      <Container id="contact">
+        <ContactTitle>Entre em contato</ContactTitle>
+        <Subtitle>Preencha os campos abaixo</Subtitle>
+        <Form ref={formRef} onSubmit={sendEmail}>
+          <Input type="text" placeholder="Insira Seu Nome" name="your_name" />
+          <Input
             type="email"
-            className="email"
-            placeholder="Your Email"
+            placeholder="Insira Seu Email"
             name="your_email"
           />
-          <textarea
-            name="message"
-            rows={5}
-            className="msg"
-            placeholder="Send a message"
-          />
-          <span className="messageStatus">
+          <Text name="message" rows={5} placeholder="Escreva uma mensagem" />
+          <MessageStatus>
             {error && (
               <Stack sx={{ width: "100%" }} spacing={2}>
                 <Alert variant="filled" severity="error">
-                  An error occurred, please try again!
+                  Ocorreu um erro. Por favor, tente novamente!
                 </Alert>
               </Stack>
             )}
             {success && (
               <Stack sx={{ width: "100%" }} spacing={2}>
                 <Alert variant="filled" severity="success">
-                  Sent with success
+                  Enviado com sucesso!
                 </Alert>
               </Stack>
             )}
-          </span>
-          <button type="submit" value="send" className="submitBtn">
-            Send
-          </button>
+          </MessageStatus>
+          <ButtonSend type="submit" value="send">
+            Enviar
+          </ButtonSend>
           <SocialMedia />
-        </form>
-      </section>
+        </Form>
+      </Container>
     </div>
   );
 };

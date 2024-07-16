@@ -1,11 +1,11 @@
-import "./footer.css";
+import { FooterContainer } from "./styles";
 
 const Footer = () => {
   return (
     <div>
-      <footer className="footer">
+      <FooterContainer>
         Copyright &#169; 2024 Matheus Henrique. All Rights Reserved
-      </footer>
+      </FooterContainer>
     </div>
   );
 };

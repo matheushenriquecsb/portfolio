@@ -1,47 +1,60 @@
-import "./skills.css";
-
-import backend from "../../assets/icons/node.svg";
-import frontend from "../../assets/icons/react.svg";
-import database from "../../assets/icons/database.svg";
+import {
+  assetsBackend,
+  assetsDatabase,
+  assetsFrontend,
+} from "../../assets/icons/assets";
+import {
+  Container,
+  SkillsContainer,
+  Wrapper,
+  Title,
+  Items,
+  ImageContainer,
+  Overlay,
+  Image,
+} from "./styles";
 
 const Skills = () => {
   return (
     <div>
-      <section id="skills">
-        <span className="skillTitle">Tech Skills</span>
-        <div className="skillBars">
-          <div className="skillBar">
-            <img src={frontend} alt="" className="skillBarImg" />
-            <div className="skillBarText">
+      <Container id="skills">
+        <Title>Tech Skills</Title>
+        <SkillsContainer>
+          <Wrapper>
+            <Items>
               <h2>Frontend</h2>
-              <p>
-                HTML5 | CSS3 | Styled Components | ReactJS | VueJS | TalwindCSS | Bootstrap
-                | Auth0
-              </p>
-            </div>
-          </div>
-          <div className="skillBar">
-            <img src={backend} alt="" className="skillBarImg" />
-            <div className="skillBarText">
+              {assetsFrontend.map((img, index) => (
+                <ImageContainer key={index}>
+                  <Image src={img.src} alt={img.alt} />
+                  <Overlay>{img.text}</Overlay>
+                </ImageContainer>
+              ))}
+            </Items>
+          </Wrapper>
+          <Wrapper>
+            <Items>
               <h2>Backend</h2>
-              <p>
-                Javascript | Typescript | NestJS | NodeJS | ExpressJS | Docker |
-                Jest | AWS S3 | Firebase | Stripe | Git | Github
-              </p>
-            </div>
-          </div>
-          <div className="skillBar">
-            <img src={database} alt="" className="skillBarImg" />
-            <div className="skillBarText">
-              <h2>Database</h2>
-              <p>
-                SQL | SQLServer | PostgreSQL | Redis | MongoDB | TypeOrm |
-                Prisma
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+              {assetsBackend.map((img, index) => (
+                <ImageContainer key={index}>
+                  <Image src={img.src} alt={img.alt} />
+                  <Overlay>{img.text}</Overlay>
+                </ImageContainer>
+              ))}
+            </Items>
+          </Wrapper>
+          <Wrapper>
+            <Items>
+              <h2>Database & Tools</h2>
+              {assetsDatabase.map((img, index) => (
+                <ImageContainer key={index}>
+                  <Image src={img.src} alt={img.alt} />
+                  <Overlay>{img.text}</Overlay>
+                </ImageContainer>
+              ))}
+            </Items>
+          </Wrapper>
+        </SkillsContainer>
+      </Container>
     </div>
   );
 };

@@ -1,133 +1,71 @@
-import "./navbar.css";
-import { Link } from "react-scroll";
 import chat from "../../assets/icons/chat-icon.svg";
-import menu from "../../assets/icons/menu.svg";
-import { useState } from "react";
+import {
+  Contact,
+  ContactImg,
+  Container,
+  Menu,
+  MenuItem,
+  Title,
+} from "./styles";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
     <div>
-      <nav className="navbar">
-        <span className="navbarTitle">Portfolio.</span>
-        <div className="navbarMenu">
-          <Link
+      <Container>
+        <Title>Portfolio.</Title>
+        <Menu>
+          <MenuItem
             activeClass="active"
             to="intro"
             spy={true}
             offset={-100}
             smooth={true}
             duration={500}
-            className="navbarMenuItem"
           >
             Home
-          </Link>
-          <Link
+          </MenuItem>
+          <MenuItem
             activeClass="active"
             to="skills"
             spy={true}
             offset={0}
             smooth={true}
             duration={500}
-            className="navbarMenuItem"
           >
             Tech Skills
-          </Link>
-          <Link
+          </MenuItem>
+          <MenuItem
             activeClass="active"
             to="projects"
             spy={true}
             offset={30}
             smooth={true}
             duration={500}
-            className="navbarMenuItem"
           >
-            Projects
-          </Link>
-          <Link
+            Projetos
+          </MenuItem>
+          <MenuItem
             activeClass="active"
             to="contact"
             spy={true}
             offset={24}
             smooth={true}
             duration={500}
-            className="navbarMenuItem"
           >
-            Contact
-          </Link>
-        </div>
-        <button
-          className="navbarMenuButton"
+            Contato
+          </MenuItem>
+        </Menu>
+        <Contact
           onClick={() => {
             document
               .getElementById("contact")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          <img src={chat} className="navbarContactImg" />
-          Contact Me
-        </button>
-        <img
-          src={menu}
-          alt="Menu"
-          className="mobMenu"
-          onClick={() => setShowMenu(!showMenu)}
-        />
-        <div
-          className="navMenu"
-          style={{ display: showMenu ? "flex" : "none" }}
-        >
-          <Link
-            activeClass="active"
-            to="intro"
-            spy={true}
-            offset={-100}
-            smooth={true}
-            duration={500}
-            className="listItemMenu"
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            Home
-          </Link>
-          <Link
-            activeClass="active"
-            to="skills"
-            spy={true}
-            offset={0}
-            smooth={true}
-            duration={500}
-            className="listItemMenu"
-            onClick={() => setShowMenu(false)}
-          >
-            Tech Skills
-          </Link>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            offset={30}
-            smooth={true}
-            duration={500}
-            className="listItemMenu"
-            onClick={() => setShowMenu(false)}
-          >
-            Projetos
-          </Link>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            offset={0}
-            smooth={true}
-            duration={500}
-            className="listItemMenu"
-            onClick={() => setShowMenu(false)}
-          >
-            Contato
-          </Link>
-        </div>
-      </nav>
+          <ContactImg src={chat} />
+          Entre em contato
+        </Contact>
+      </Container>
     </div>
   );
 };
