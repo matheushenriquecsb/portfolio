@@ -1,33 +1,41 @@
-import "./intro.css";
 import profile from "../../assets/images/profile.png";
 import pdf from "../../assets/resume.pdf";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import {
+  AboutMe,
+  Container,
+  IntroName,
+  IntroText,
+  Name,
+  ProfilePicture,
+  Resume,
+} from "./styles";
 
 const Intro = () => {
   return (
     <div>
-      <section id="intro">
-        <div className="introContent">
-          <span className="helloText">Hello,</span>
-          <span className="introText">
-            I'm <span className="introName">Matheus Henrique</span> <br />
-            Fullstack Developer,
-            <p className="introDescription">
-              As a developer, I have experience in developing and maintenance
+      <Container id="intro">
+        <IntroText>
+          <IntroName>Olá,</IntroName>
+          <span>
+            Me chamo <Name>Matheus Henrique</Name> <br />
+            Desenvolvedor Fullstack,
+            <AboutMe>
+              +2 anos de experiência atuando com foco em NodeJS e ReactJS.
               <br />
-              of applications that cover both the frontend and the backend
+              Atuei no desenvolvimento e manutenção de Restful APIs, e criação
               <br />
-            </p>
+              de interfaces modernas e interativas para usuários.
+              <br />
+            </AboutMe>
             <a href={pdf} target="_blank">
-              <button className="introButton" style={{ maxWidth: "250px" }}>
-                See my resume
-              </button>
+              <Resume style={{ maxWidth: "250px" }}>Curriculo</Resume>
             </a>
             <SocialMedia />
           </span>
-        </div>
-        <img src={profile} alt="profile" className="profilePicture" />
-      </section>
+        </IntroText>
+        <ProfilePicture src={profile} alt="profile" />
+      </Container>
     </div>
   );
 };
