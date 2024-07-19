@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import bookingWebsite from "../../assets/images/booking_project.png";
 import burguerOrder from "../../assets/images/burguer_order.png";
 import foodOrderProject from "../../assets/images/food-order-delivery.png";
@@ -5,10 +6,12 @@ import githubProject from "../../assets/images/github_project.png";
 import { Button, Container, Image, Title, Wrapper } from "./styles";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Container id="projects">
-        <Title>Projetos</Title>
+        <Title>{t("projectsTitle")}</Title>
         <Wrapper>
           <a href="https://booking-rent.netlify.app" target="_blank">
             <h3>Booking Clone Fullstack</h3>
@@ -35,7 +38,7 @@ const Projects = () => {
           href="https://github.com/mButtontheushenriquecsb"
           target="_blank"
         >
-          <button>Veja mais</button>
+          <button>{t("projectsButton")}</button>
         </Button>
       </Container>
     </div>
