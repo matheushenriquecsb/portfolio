@@ -21,7 +21,9 @@ export const Title = styled.span`
   font-weight: 700;
 `;
 
-export const Menu = styled.div``;
+export const Menu = styled.div`
+  margin-left: 150px;
+`;
 
 export const MenuItem = styled(Link)`
   margin: 0 10px;

@@ -13,11 +13,13 @@ import {
   Subtitle,
   Text,
 } from "./styles";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
+  const { t } = useTranslation();
 
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
@@ -60,34 +62,38 @@ const Contact = () => {
   return (
     <div>
       <Container id="contact">
-        <ContactTitle>Entre em contato</ContactTitle>
-        <Subtitle>Preencha os campos abaixo</Subtitle>
+        <ContactTitle> {t("contactTitle")}</ContactTitle>
+        <Subtitle> {t("contactSubtitle")}</Subtitle>
         <Form ref={formRef} onSubmit={sendEmail}>
-          <Input type="text" placeholder="Insira Seu Nome" name="your_name" />
+          <Input
+            type="text"
+            placeholder={t("placeholderName")}
+            name="your_name"
+          />
           <Input
             type="email"
-            placeholder="Insira Seu Email"
+            placeholder={t("placeholderEmail")}
             name="your_email"
           />
-          <Text name="message" rows={5} placeholder="Escreva uma mensagem" />
+          <Text name="message" rows={5} placeholder={t("placeholderMessage")} />
           <MessageStatus>
             {error && (
               <Stack sx={{ width: "100%" }} spacing={2}>
                 <Alert variant="filled" severity="error">
-                  Ocorreu um erro. Por favor, tente novamente!
+                  {t("contactError")}
                 </Alert>
               </Stack>
             )}
             {success && (
               <Stack sx={{ width: "100%" }} spacing={2}>
                 <Alert variant="filled" severity="success">
-                  Enviado com sucesso!
+                  {t("contactSucess")}
                 </Alert>
               </Stack>
             )}
           </MessageStatus>
           <ButtonSend type="submit" value="send">
-            Enviar
+            {t("contactButton")}
           </ButtonSend>
           <SocialMedia />
         </Form>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import profile from "../../assets/images/profile.png";
 import pdf from "../../assets/resume.pdf";
 import SocialMedia from "../SocialMedia/SocialMedia";
@@ -12,24 +13,27 @@ import {
 } from "./styles";
 
 const Intro = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Container id="intro">
         <IntroText>
-          <IntroName>Olá,</IntroName>
+          <IntroName>{t("introHello")},</IntroName>
           <span>
-            Me chamo <Name>Matheus Henrique</Name> <br />
-            Desenvolvedor Fullstack,
+            {t("intro")}
+            <Name> Matheus Henrique</Name> <br />
+            {t("introRole")},
             <AboutMe>
-              +2 anos de experiência atuando com foco em NodeJS e ReactJS.
+              {t("intro1")}
               <br />
-              Atuei no desenvolvimento e manutenção de Restful APIs, e criação
+              {t("intro2")}
               <br />
-              de interfaces modernas e interativas para usuários.
+              {t("intro3")}
               <br />
             </AboutMe>
             <a href={pdf} target="_blank">
-              <Resume style={{ maxWidth: "250px" }}>Curriculo</Resume>
+              <Resume style={{ maxWidth: "250px" }}>{t("resume")}</Resume>
             </a>
             <SocialMedia />
           </span>

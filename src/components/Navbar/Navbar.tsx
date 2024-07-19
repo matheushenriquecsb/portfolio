@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 import chat from "../../assets/icons/chat-icon.svg";
+import TranslateButton from "../TranslateButton/TranslateButton";
 import {
   Contact,
   ContactImg,
@@ -9,6 +11,8 @@ import {
 } from "./styles";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Container>
@@ -42,7 +46,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Projetos
+            {t("navbarProjects")}
           </MenuItem>
           <MenuItem
             activeClass="active"
@@ -52,9 +56,10 @@ const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Contato
+            {t("navbarContact")}
           </MenuItem>
         </Menu>
+        <TranslateButton />
         <Contact
           onClick={() => {
             document
@@ -63,7 +68,7 @@ const Navbar = () => {
           }}
         >
           <ContactImg src={chat} />
-          Entre em contato
+          {t("navbarcontactUs")}
         </Contact>
       </Container>
     </div>

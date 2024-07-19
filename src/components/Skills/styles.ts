@@ -70,7 +70,9 @@ export const Items = styled.div`
     gap: 10px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px @media (max-width: 768px) {
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
       font-size: 1.5rem;
     }
 
