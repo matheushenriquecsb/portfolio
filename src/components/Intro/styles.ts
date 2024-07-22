@@ -34,11 +34,8 @@ export const ProfilePicture = styled.img`
   right: 0;
   z-index: 0;
   object-fit: cover;
-  height: 45vh;
-<<<<<<< HEAD:src/components/Intro/styles.ts
-=======
+  height: 45vh;  
 }
->>>>>>> main:src/components/Intro/intro.css
 
   @media screen and (max-width: 840px) { 
     display: none;
