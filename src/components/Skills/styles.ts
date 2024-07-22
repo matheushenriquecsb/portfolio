@@ -10,6 +10,10 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+
+  @media (max-width: 968px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.span`
@@ -87,16 +91,6 @@ export const Items = styled.div`
     margin-top: 5px;
     margin-left: 15px;
     margin-right: 15px;
-
-    @media (max-width: 768px) {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    @media (max-width: 480px) {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
   }
 `;
 

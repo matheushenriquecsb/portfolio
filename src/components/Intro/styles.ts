@@ -72,4 +72,8 @@ export const Resume = styled.button`
   border: none;
   border-radius: 2rem;
   cursor: pointer;
+
+  @media screen and (max-width: 968px) {
+    margin: 30px 100px;
+  }
 `;
